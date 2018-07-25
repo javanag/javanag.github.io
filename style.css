@@ -1,0 +1,82 @@
+html {
+	background-color: #00204E;
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Cabin', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.uoftblue {
+	color: #00204E;
+}
+
+.email {
+	color: #00204E;
+	transition: 0.2s;
+}
+
+.email:hover {
+	color: #bb133e;
+}
+
+.space {
+  margin-top: 30px;
+}
+
+.project-showcase {
+	overflow: hidden;
+}
+
+.project-showcase img{
+	width: 100%;
+}
+
+.img-container {
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00204E;
+}
+
+.overlay:hover {
+	opacity: 0.95;
+}
+
+.overlay p{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(-10%, -50%);
+  -ms-transform: translate(-10%, -50%);
+  transform: translate(-10%, -50%);
+	color: white;
+}
+
+@media screen and (max-width: 768px){
+	.overlay p{
+		top: 10%;
+  	left: 10%;
+		-webkit-transform: translate(-5%, -5%);
+		-ms-transform: translate(-5%, -5%);
+		transform: translate(-5%, -5%);
+	}
+}

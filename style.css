@@ -7,7 +7,7 @@ body {
 	min-height: 100%;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
 	font-family: 'Cabin', sans-serif;
 }
 
@@ -17,6 +17,15 @@ ul {
 
 .uoftblue {
 	color: #00204E;
+}
+
+.footer {
+	color: white;
+	padding: 10px;
+	margin-top: 30px;
+	width: 100%;
+	z-index: 2;
+	background-color: #00204E;
 }
 
 .email {
@@ -29,11 +38,49 @@ ul {
 }
 
 .space {
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+#navbar {
+	-webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.tabbed {
+	text-indent: 20px;
+}
+
+.sticky {
+	background-color: #00204E;
+}
+
+.anchor {
+	padding-top: 60px;
+	margin-top: -60px;
+}
+
+.navpad{
+  margin-top: 73px;
+}
+
+.hidden {
+	display: none;
+}
+
+.sticky a, .sticky button{
+	color: #FFFFFF;
+}
+
+.sticky a:hover, .sticky a:active{
+	background-color: #00204E !important;
+	color: #ffffff;
 }
 
 .project-showcase {
 	overflow: hidden;
+	text-align: center;
 }
 
 .project-showcase img{
@@ -52,8 +99,16 @@ ul {
   right: 0;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.4s ease;
   background-color: #00204E;
+}
+
+.raised {
+	z-index: 1;
+}
+
+.link{
+
 }
 
 .overlay:hover {

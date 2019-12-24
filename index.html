@@ -31,66 +31,48 @@
 
 <body onload="init()">
     <div class="container" id="header">
-        <div class="row">
+        <div style="float: left;">
             <h1>Javan Graham</h1>
             <h4 class="subtitle">software developer and ...</h4>
-            <h3>Hon. Bachelor of Science<br />Computer Science Specialist<br /></h3>
-            <h3><i class="fa fa-university"></i> University of Toronto</h3>
-            <h4><i class="fa fa-graduation-cap"></i>Graduating 2021</h4>
+        </div>
+        <div style="float: right;">
+            <ul class="nav">
+                <li><a class="link" href="#about">about</a></li>
+                <li><a class="link" href="#experience">experience</a></li>
+                <li><a class="link" href="#projects">projects</a></li>
+                <li><a class="link" href="#">blog</a></li>
+            </ul>
+        </div>
 
-            <h4>Mail</h4>
-            <ul>
-                <li class="email"><i class="fa fa-envelope"></i> javan.graham &ltat&gt mail.utoronto.ca</li>
-            </ul>
-            <h4>Links</h4>
-            <ul>
-                <li><a href="https://github.com/javanag"><i class="fa fa-github-square"></i> GitHub</a></li>
-            </ul>
-        </div>
-        <div id="navmarker"></div>
-        <nav class="navbar navbar-light" id="navbar" style="z-index: 2;">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navlinks">
-                <i class="fa fa-bars fa-lg"></i>
-            </button>
-            <div class="container-fluid">
-                <div class="navbar-header hidden" id="navheader">
-                    <a class="navbar-brand" href="#top">Javan Graham</a>
-                </div>
-                <div class="collapse navbar-collapse" id="navlinks">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="link" href="#about">About</a></li>
-                        <li><a class="link" href="#projects">Projects</a></li>
-                        <li><a class="link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="row" id="belownav">
-            <div class="col-sm-12">
-                <span>
-                    <h2 id="about" class="anchor">About</h2>
-                </span>
-            </div>
-            <div class="col-sm-12 raised">
-                <p class="tabbed">Hello, I'm Javan, a student at the University of Toronto about to enter my third year.
-                    I first got into programming as a kid by playing Minecraft and wanting to make a game as cool as
-                    that. My first project was a console text adventure game. As I learned more, I began to realize that
-                    so much more could be created than games, the creative possibilities and practical applications were
-                    endless, and there will always be new problems to solve.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <span>
-                    <h2 id="projects" class="anchor">Projects</h2>
-                </span>
-                <blockquote>"What I cannot create, I do not understand."<br />
-                    <footer> <a href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a></footer>
-                </blockquote>
-            </div>
-        </div>
+        <div style="clear: both;"></div>
+
+        <h2 id="about">About</h2>
+
+        <p class="tabbed">
+            Hello, I'm Javan, a student in the Computer Science Specialist program at the
+            <i class="fa fa-university"></i> University of Toronto. Recently, I've completed my third year,
+            and have been on PEY since May 2019 <i class="fa fa-briefcase"></i> working at
+            <a href="https://www.overbond.com/">Overbond</a> as a software developer and learning for dear life
+            in a fast-paced environment. I look forward to returning to school to complete my studies and
+            <i class="fa fa-graduation-cap"></i> graduate in 2021.
+        </p>
+
+        <p class="tabbed">
+            Continue reading to see some selected projects that I have been working on, or check out what I've
+            been doing in general on my <a href="https://github.com/javanag"><i class="fa fa-github-square"></i>
+                GitHub</a>. Send me an email at <span class="email"><i class="fa fa-envelope"></i>
+                <b>javan.graham &ltat&gt mail.utoronto.ca</b></span> if you'd like to discuss anything!
+        </p>
+
+        <h2 id="experience">Experience</h2>
+
+        <h2 id="projects">Projects</h2>
+
+        <blockquote>"What I cannot create, I do not understand."<br />
+            <footer> - <a href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a></footer>
+        </blockquote>
         <div class="row text-center text-muted">
-            <h5>(Tap/hover over images to see info.)</h5>
+            <p>Tap or hover over images to see more information.</p>
         </div>
         <div class="row">
             <div class="col-sm-3 col-xs-6 project-showcase">
@@ -112,7 +94,8 @@
                 <div class="img-container">
                     <img src="assets/animate.png" alt="Hello written in AniMate.">
                     <div class="overlay">
-                        <p>Create simple animations. Written in C++ using SDL2. Inspired heavily by avid use of Flipnote
+                        <p>Create simple animations. Written in C++ using SDL2. Inspired heavily by avid use of
+                            Flipnote
                             Hatena as a kid (RIP).</p>
                     </div>
                 </div>

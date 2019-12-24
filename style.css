@@ -25,17 +25,24 @@ ul {
   list-style-type: none;
 }
 
-a {
-  color: cornflowerblue;
-  transition: 0.2s;
+i {
+  margin-left: -20px;
 }
 
-a:hover {
-  color: palevioletred;
+a {
+  transition: 0.1s;
+}
+
+a:link {
+  color: cornflowerblue;
 }
 
 a:visited {
   color: purple;
+}
+
+a:hover {
+  color: palevioletred;
 }
 
 .uoftblue {
@@ -49,7 +56,6 @@ a:visited {
 }
 
 .email {
-  color: #00204E;
   transition: 0.2s;
 }
 
@@ -65,26 +71,34 @@ a:visited {
   text-indent: 20px;
 }
 
-.anchor {
-  padding-top: 60px;
-  margin-top: -60px;
+.nav {
+  font-size: larger;
+  padding: 0.5em;
 }
 
-.navpad{
-  margin-top: 73px;
+.nav li {
+  display: inline;
+  padding: 0 0.5em;
+}
+
+.nav a{
+  text-decoration: none;
+}
+
+.nav a:visited {
+  color: whitesmoke;
+}
+
+.nav a:link {
+  color: whitesmoke;
+}
+
+.nav a:hover {
+  text-decoration: underline;
 }
 
 .hidden {
   display: none;
-}
-
-.sticky a, .sticky button{
-  color: #FFFFFF;
-}
-
-.sticky a:hover, .sticky a:active{
-  background-color: #00204E !important;
-  color: #ffffff;
 }
 
 .project-showcase {

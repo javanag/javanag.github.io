@@ -17,6 +17,10 @@ body {
   border-radius: 25px;
 }
 
+.title {
+  font-size: 300%;
+}
+
 .subtitle {
   margin-top: -15px;
 }
@@ -29,7 +33,7 @@ li {
   list-style-type: none;
 }
 
-h2 i {
+h1 i {
   margin: 0.25em;
   margin-left: 0;
   padding: 0.25em;
@@ -37,7 +41,7 @@ h2 i {
 }
 
 i {
-  margin-left: -20px;
+  /* margin-left: -20px; */
 }
 
 a {

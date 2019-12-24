@@ -1,165 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866871-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
 
-		  gtag('config', 'UA-122866871-1');
-		</script>
-		<title>Javan Graham | Software Developer</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="theme-color" content="#00204E" />
-  	<meta name="msapplication-navbutton-color" content="#00204E">
-  	<meta name="apple-mobile-web-app-capable" content="yes">
-  	<meta name="apple-mobile-web-app-status-bar-style" content="#00204E">
-		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  	<link rel="stylesheet" href="style.css">
-		<link rel='icon' href='assets/favicon.ico' type='image/x-icon'/ >
-		<script src="script.js"></script>
-	</head>
-  <body onload="setup()">
-  	<div class="container" id="header">
-  		<div class="row">
-  			<div class="col-sm-4">
-	  			<h1>Javan Graham</h1>
-	    		<h3>Hon. Bachelor of Science<br/>Computer Science Specialist<br/></h3><h3 class="uoftblue"><i class="fa fa-university"></i> University of Toronto</h3>
-	    		<h4><i class="fa fa-graduation-cap"></i>Graduating 2021</h4>
-  			</div>
-  			<div class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-4 space">
-  				<span class="vertical-center">
-	  				<h4>Mail</h4>
-	  				<ul>
-	  					<li class="email"><i class="fa fa-envelope"></i> javan.graham &ltat&gt mail.utoronto.ca</li>
-	  				</ul>
-	  				<h4>Links</h4>
-	  				<ul>
-	  					<li><a href="https://github.com/javanag"><i class="fa fa-github-square"></i> GitHub</a></li>
-	  				</ul>
-					</span>
-  			</div>
-  		</div>
-  		<div id="navmarker"></div>
-  		<nav class="navbar navbar-light" id="navbar" style="z-index: 2;">
-  			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navlinks">
-        	<i class="fa fa-bars fa-lg"></i>             
-      	</button>
-			  <div class="container-fluid">
-			    <div class="navbar-header hidden" id="navheader">
-			      <a class="navbar-brand" href="#top">Javan Graham</a>
-			    </div>
-			    <div class="collapse navbar-collapse" id="navlinks">
-				    <ul class="nav navbar-nav navbar-right">
-				      <li><a class="link" href="#about">About</a></li>
-				      <li><a class="link" href="#projects">Projects</a></li>
-				      <li><a class="link" href="#contact">Contact</a></li>
-				    </ul>
-			   	</div>
-			  </div>
-			</nav>
-			<div class="row" id="belownav">
-				<div class="col-sm-12">
-					<span><h2 id="about" class="anchor">About</h2></span>
-				</div>
-				<div class="col-sm-12 raised">
-					<p class="tabbed">Hello, I'm Javan, a student at the University of Toronto about to enter my third year. I first got into programming as a kid by playing Minecraft and wanting to make a game as cool as that. My first project was a console text adventure game. As I learned more, I began to realize that so much more could be created than games, the creative possibilities and practical applications were endless, and there will always be new problems to solve.</p>
-				</div>
-			</div>
-  		<div class="row">
-  			<div class="col-sm-12">
-  				<span><h2 id="projects" class="anchor">Projects</h2></span>
-  				<blockquote>"What I cannot create, I do not understand."<br/><footer> <a href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a></footer></blockquote>
-  			</div>
-  		</div>
-  		 <div class="row text-center text-muted">
-  		 	<h5>(Tap/hover over images to see info.)</h5>
-  		 </div>
-  		<div class="row">
-  			<div class="col-sm-3 col-xs-6 project-showcase">
-  				<a href="https://javangraham.me/typehero/"><h4>TypeHero (WIP)</h4></a>
-  				<div class="img-container">
-  					<img src="assets/typehero.png" alt="Knight beside a campfire.">
-  					<div class="overlay"><p>RPG flavoured typing game written in JavaScript. Successor to class project written in Verilog with Sai Varikooty.</p></div>
-  				</div>
-  			</div>
-  			<div class="col-sm-3 col-xs-6 project-showcase">
-  				<a href="https://github.com/javanag/animate"><h4>AniMate (WIP)</h4></a>
-  				<div class="img-container">
-  					<img src="assets/animate.png" alt="Hello written in AniMate.">
-  					<div class="overlay"><p>Create simple animations. Written in C++ using SDL2. Inspired heavily by avid use of Flipnote Hatena as a kid (RIP).</p></div>
-  				</div>
-  			</div>
-  			<div class="col-sm-3 col-xs-6 project-showcase">
-  				<a href="https://waterfrontdanceparty.com"><h4>Waterfront Dance</h4></a>
-  				<div class="img-container">
-  					<img src="assets/wdp.png" alt="People having fun at a party.">
-  					<div class="overlay"><p>Designed responsive static site with Bootstrap for Rotary Club of Burlington Lakeshore to promote their new event.</p></div>
-  				</div>
-  			</div>
-  			<div class="col-sm-3 col-xs-6 project-showcase">
-  				<a href="https://github.com/javanag/Shelf"><h4>Shelf (WIP)</h4></a>
-  				<div class="img-container">
-  					<img src="assets/shelf.png" alt="Some work in progress grid of the same book.">
-  					<div class="overlay"><p>Android app written in Java using Google Mobile Vision API. Scan ISBN bar codes from live camera input for reading list tracking.</p></div>
-  				</div>
-  			</div>
-  		</div>
-  		<div class="row space">
-				<div class="col-sm-12">
-					<span><h2 id="contact" class="anchor">Contact</h2></span>
-				</div>
-				<div class="col-sm-6 raised">
-					<p class="tabbed">If you have questions about any of my projects, what I do, or if you just want to say hello, feel free to reach me through my email, or use the following form to send a quick message and I'll get back to you.</p>
-				</div>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866871-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-122866871-1');
+    </script>
 
-				<div class="col-sm-6">
-					<form id="contactform" method="POST">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label for="name">Name</label>
-									<input class="form-control" type="text" name="name" placeholder="Your name">
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<label for="email">Email *</label>
-					    		<input class="form-control" required="required" data-error="Email is required." type="email" name="_replyto" placeholder="Your email *">
-								</div>
-							</div>
-						</div>
-						<!--Hidden elements for subject and bot filter.-->
-						<input type="hidden" name="_subject" value="Portfolio Contact Form"/>
-					  <input type="text" name="_gotcha" style="display:none" />
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-group">
-									<label for="message">Message *</label>
-									<textarea name="message" class="form-control" rows="3" placeholder="Your message *" required="required" data-error="Please, leave me a message."></textarea>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="form-group text-center">
-									<input class="btn btn-primary" type="submit" value="Send">
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-  	</div>
-  	<div class="footer">
-			<p class="float-left">© 2018 Javan Graham</p>
-		</div>
-  </body>
+    <title>Javan Graham | Software Developer</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111111" />
+    <meta name="msapplication-navbutton-color" content="#111111">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#111111">
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel='icon' href='assets/favicon.ico' type='image/x-icon'/>
+    <script src="script.js"></script>
+</head>
+
+<body onload="setup()">
+    <div class="container" id="header">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>Javan Graham</h1>
+                <h3>Hon. Bachelor of Science<br />Computer Science Specialist<br /></h3>
+                <h3 class="uoftblue"><i class="fa fa-university"></i> University of Toronto</h3>
+                <h4><i class="fa fa-graduation-cap"></i>Graduating 2021</h4>
+            </div>
+            <div class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-4 space">
+                <span class="vertical-center">
+                    <h4>Mail</h4>
+                    <ul>
+                        <li class="email"><i class="fa fa-envelope"></i> javan.graham &ltat&gt mail.utoronto.ca</li>
+                    </ul>
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="https://github.com/javanag"><i class="fa fa-github-square"></i> GitHub</a></li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        <div id="navmarker"></div>
+        <nav class="navbar navbar-light" id="navbar" style="z-index: 2;">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navlinks">
+                <i class="fa fa-bars fa-lg"></i>
+            </button>
+            <div class="container-fluid">
+                <div class="navbar-header hidden" id="navheader">
+                    <a class="navbar-brand" href="#top">Javan Graham</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navlinks">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="link" href="#about">About</a></li>
+                        <li><a class="link" href="#projects">Projects</a></li>
+                        <li><a class="link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row" id="belownav">
+            <div class="col-sm-12">
+                <span>
+                    <h2 id="about" class="anchor">About</h2>
+                </span>
+            </div>
+            <div class="col-sm-12 raised">
+                <p class="tabbed">Hello, I'm Javan, a student at the University of Toronto about to enter my third year.
+                    I first got into programming as a kid by playing Minecraft and wanting to make a game as cool as
+                    that. My first project was a console text adventure game. As I learned more, I began to realize that
+                    so much more could be created than games, the creative possibilities and practical applications were
+                    endless, and there will always be new problems to solve.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <span>
+                    <h2 id="projects" class="anchor">Projects</h2>
+                </span>
+                <blockquote>"What I cannot create, I do not understand."<br />
+                    <footer> <a href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a></footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="row text-center text-muted">
+            <h5>(Tap/hover over images to see info.)</h5>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-xs-6 project-showcase">
+                <a href="https://javangraham.me/typehero/">
+                    <h4>TypeHero (WIP)</h4>
+                </a>
+                <div class="img-container">
+                    <img src="assets/typehero.png" alt="Knight beside a campfire.">
+                    <div class="overlay">
+                        <p>RPG flavoured typing game written in JavaScript. Successor to class project written in
+                            Verilog with Sai Varikooty.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6 project-showcase">
+                <a href="https://github.com/javanag/animate">
+                    <h4>AniMate (WIP)</h4>
+                </a>
+                <div class="img-container">
+                    <img src="assets/animate.png" alt="Hello written in AniMate.">
+                    <div class="overlay">
+                        <p>Create simple animations. Written in C++ using SDL2. Inspired heavily by avid use of Flipnote
+                            Hatena as a kid (RIP).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6 project-showcase">
+                <a href="https://waterfrontdanceparty.com">
+                    <h4>Waterfront Dance</h4>
+                </a>
+                <div class="img-container">
+                    <img src="assets/wdp.png" alt="People having fun at a party.">
+                    <div class="overlay">
+                        <p>Designed responsive static site with Bootstrap for Rotary Club of Burlington Lakeshore to
+                            promote their new event.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6 project-showcase">
+                <a href="https://github.com/javanag/Shelf">
+                    <h4>Shelf (WIP)</h4>
+                </a>
+                <div class="img-container">
+                    <img src="assets/shelf.png" alt="Some work in progress grid of the same book.">
+                    <div class="overlay">
+                        <p>Android app written in Java using Google Mobile Vision API. Scan ISBN bar codes from live
+                            camera input for reading list tracking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row space">
+            <div class="col-sm-12">
+                <span>
+                    <h2 id="contact" class="anchor">Contact</h2>
+                </span>
+            </div>
+            <div class="col-sm-6 raised">
+                <p class="tabbed">If you have questions about any of my projects, what I do, or if you just want to say
+                    hello, feel free to reach me through my email, or use the following form to send a quick message and
+                    I'll get back to you.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <form id="contactform" method="POST">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input class="form-control" type="text" name="name" placeholder="Your name">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input class="form-control" required="required" data-error="Email is required."
+                                    type="email" name="_replyto" placeholder="Your email *">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Hidden elements for subject and bot filter.-->
+                    <input type="hidden" name="_subject" value="Portfolio Contact Form" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea name="message" class="form-control" rows="3" placeholder="Your message *"
+                                    required="required" data-error="Please, leave me a message."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group text-center">
+                                <input class="btn btn-primary" type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="float-left">© 2018 Javan Graham</p>
+    </div>
+</body>
+
 </html>

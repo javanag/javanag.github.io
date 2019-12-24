@@ -1,74 +1,25 @@
-var navbar;
-var navheader;
-var navbarY;
-var navmarker;
-var containerRect;
-var belownav;
-var setupFinished = false;
-var containers;
-var links;
-var contactform;
-
-function setup() {
-	navbar = document.getElementById("navbar");
-	navheader = document.getElementById("navheader");
-	belownav = document.getElementById("belownav");
-	navmarker = document.getElementById("navmarker");
-	containers = document.getElementsByClassName("container");
-	links = document.getElementsByClassName("link");
-	contactform =  document.getElementById('contactform');
-	contactform.setAttribute('action', 'https://formspree.io/' + 'javan' + '.' +'graham' + '@' + 'mail' + '.' + 'utoronto' + '.' + 'ca');
-	navbarY = navbar.offsetTop;
-	setupFinished = true;
-	attatchNavbar();
+const init = () => {
+  updateElements();
+  setInterval(updateElements, 1000);
 }
 
-window.onscroll = function(){
-	attatchNavbar();
-};
+const updateElements = () => {
+  today = new Date();
 
-function attatchNavbar() {
-	if(setupFinished){
-		if(window.innerWidth < 768){
-			navbar.classList.add("sticky");
-			navbar.classList.add("navbar-fixed-top");
-			navheader.classList.add("hidden");
-			for(var i = 0; i < containers.length; i++){
-				containers[i].classList.add("navpad");
-			}
-		}else{
-			if (window.pageYOffset >= navbarY) {
-		    navbar.classList.add("sticky");
-		   	navbar.classList.add("navbar-fixed-top");
-		   	navheader.classList.remove("hidden");
-		   	belownav.classList.add("navpad");
-		  } else {
-		    navbar.classList.remove("sticky");
-		   	navbar.classList.remove("navbar-fixed-top");
-		    navheader.classList.add("hidden");
-		    belownav.classList.remove("navpad");
-		  }
-		}
-	}
+  hexHours = convertTimeToHex(today.getHours());
+  hexMinutes = convertTimeToHex(today.getMinutes());
+  hexSeconds = convertTimeToHex(today.getSeconds());
+
+  hexColour = `#${hexHours}${hexMinutes}${hexSeconds}`;
+  console.log(hexColour);
+
+  document.querySelectorAll('.colour-clock').forEach((e) => {
+    e.style.background = hexColour;
+  });
 }
 
-window.onresize = function(){
-	if(setupFinished){
-		navbarY = navmarker.offsetTop;
-		if(window.innerWidth >= 768){
-			for(var i = 0; i < links.length; i++){
-				links[i].setAttribute("data-toggle", "");
-				links[i].setAttribute("data-target", "");
-			}
-			for(var i = 0; i < containers.length; i++){
-				containers[i].classList.remove("navpad");
-			}
-		}else{
-			for(var i = 0; i < links.length; i++){
-				links[i].setAttribute("data-toggle", "collapse");
-				links[i].setAttribute("data-target", "#navlinks");
-			}
-		}
-		attatchNavbar();
-	}
-};
+// Add necessary zeroes to pad number of hours for hex colour value
+const convertTimeToHex = (value) => {
+  result = value.toString();
+  return result.length < 2 ? '0' + result : result;
+}

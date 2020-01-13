@@ -3,7 +3,7 @@
 html {
   background-color: black;
   height: 100%;
-  transition: background-color 0.5s;
+  transition: background-color 0.25s;
 }
 
 body {
@@ -43,8 +43,14 @@ h1 i {
   padding-left: 0;
 }
 
-i {
-  /* margin-left: -20px; */
+.motd {
+  cursor: pointer;
+  background: none;
+  color: inherit;
+  border: none;
+  font-size: medium;
+  font-family: inherit;
+  padding: 0;
 }
 
 a {

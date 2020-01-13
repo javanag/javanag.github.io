@@ -4,7 +4,7 @@ import Icon from "./Icon"
 const WorkExperience = ({ company, companyUrl, subtitle, children }) => (
   <div>
     <h3><a href={companyUrl}>{company}</a></h3>
-    <h4 class="subtitle"><Icon icon="fas fa-map-marker-alt"/> {subtitle}</h4>
+    <h4 className="subtitle"><Icon icon="fas fa-map-marker-alt"/> {subtitle}</h4>
     {children}
   </div>
 )

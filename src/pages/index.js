@@ -60,8 +60,9 @@ export default () => {
           Read on to see some selected projects and work experience. I first got into programming as a kid by playing 
           Minecraft and being inspired to learn how to create a game like that. To find out more about me,<i> keep clicking the
           subtitle under my name above</i>. Check out my <a href="https://github.com/javanag"> <Icon icon="fab fa-github-alt" /> GitHub</a> to
-          see more, and send me an email at <span className="email"><Icon icon="fa fa-envelope" />
-            <b> javan.graham (at) mail.utoronto.ca</b></span> if you'd like to discuss anything!
+          see more, peep my <a href="https://ca.linkedin.com/in/javan-graham-baabb1195"> <Icon icon="fab fa-linkedin" /> LinkedIn</a>,
+          and send me an email at <span className="email"><Icon icon="fa fa-envelope" />
+          <b> javan.graham (at) mail.utoronto.ca</b></span> if you'd like to discuss anything!
         </p>
       </Section>
 

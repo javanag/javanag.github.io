@@ -2,7 +2,7 @@ import React from "react"
 import Icon from "./Icon"
 
 const WorkExperience = ({ company, companyUrl, subtitle, children }) => (
-  <div>
+  <div className="entry">
     <h3><a href={companyUrl}>{company}</a></h3>
     <h4 className="subtitle"><Icon icon="fas fa-map-marker-alt"/> {subtitle}</h4>
     {children}

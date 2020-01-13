@@ -32,7 +32,13 @@ export default () => {
 
   return (
     <main className="container">
-      <Helmet htmlAttributes={{ style: `background-color : ${clockColour}` }}>
+      <Helmet style={[{
+        "cssText": `
+            html {
+                background-color: ${clockColour};
+            }
+        `
+      }]}>
         <title>Javan Graham | Software Developer</title>
         <meta name="description" content="Toronto based software developer and computer science student at UofT" />
         <meta charSet="utf-8" />
@@ -57,12 +63,12 @@ export default () => {
         </p>
 
         <p>
-          Read on to see some selected projects and work experience. I first got into programming as a kid by playing 
+          Read on to see some selected projects and work experience. I first got into programming as a kid by playing
           Minecraft and being inspired to learn how to create a game like that. To find out more about me,<i> keep clicking the
           subtitle under my name above</i>. Check out my <a href="https://github.com/javanag"> <Icon icon="fab fa-github-alt" /> GitHub</a> to
           see more, peep my <a href="https://ca.linkedin.com/in/javan-graham-baabb1195"> <Icon icon="fab fa-linkedin" /> LinkedIn</a>,
           and send me an email at <span className="email"><Icon icon="fa fa-envelope" />
-          <b> javan.graham (at) mail.utoronto.ca</b></span> if you'd like to discuss anything!
+            <b> javan.graham (at) mail.utoronto.ca</b></span> if you'd like to discuss anything!
         </p>
       </Section>
 
@@ -72,7 +78,7 @@ export default () => {
         </blockquote>
 
         <p className="footer">
-          (I'd like to take some more time to get this right. For now please see 
+          (I'd like to take some more time to get this right. For now please see
           my <a href="https://github.com/javanag">GitHub</a>)
         </p>
       </Section>

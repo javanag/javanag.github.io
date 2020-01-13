@@ -69,6 +69,11 @@ export default () => {
         <blockquote className="subtitle">"What I cannot create, I do not understand."<br />
           <footer> - <a href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a></footer>
         </blockquote>
+
+        <p className="footer">
+          (I'd like to take some more time to get this right. For now please see 
+          my <a href="https://github.com/javanag">GitHub</a>)
+        </p>
       </Section>
 
       <Section icon="fa fa-laptop-code" text="Experience">

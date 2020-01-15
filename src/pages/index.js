@@ -64,8 +64,8 @@ export default () => {
 
         <p>
           Read on to see some selected projects and work experience. I first got into programming as a kid by playing
-          Minecraft and being inspired to learn how to create a game like that. To find out more about me,<i> keep clicking the
-          subtitle under my name above</i>. Check out my <a href="https://github.com/javanag"> <Icon icon="fab fa-github-alt" /> GitHub</a> to
+          Minecraft and being inspired to learn how to create a game like that. <i>Click around to discover some easter
+          eggs on the page!</i> Check out my <a href="https://github.com/javanag"> <Icon icon="fab fa-github-alt" /> GitHub</a> to
           see more, peep my <a href="https://ca.linkedin.com/in/javan-graham-baabb1195"> <Icon icon="fab fa-linkedin" /> LinkedIn</a>,
           and send me an email at <span className="email"><Icon icon="fa fa-envelope" />
             <b> javan.graham (at) mail.utoronto.ca</b></span> if you'd like to discuss anything!
@@ -94,7 +94,7 @@ export default () => {
             Responsibilities include:
           </p>
           <ul>
-            <li>Implementing features for flagship <Icon icon="fas fa-gem" /> Ruby on Rails and <Icon icon="fas fa-atom" /> React web app</li>
+            <li>Implementing features for flagship <Icon icon="fas fa-gem" /> Ruby on Rails and <Icon icon="fab fa-react" /> React web app</li>
             <li>Creating applications to intake data from financial APIs into <Icon icon="fas fa-database" />  Postgres using <Icon icon="fab fa-python" /> Python</li>
             <li>Writing design docs, planning sprints, maintaining documentation and tests together with code changes</li>
           </ul>

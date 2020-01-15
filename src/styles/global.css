@@ -84,6 +84,10 @@ a:hover {
   text-align: center;
 }
 
+.footer a {
+  color: #999;
+}
+
 .email {
   transition: 0.2s;
 }

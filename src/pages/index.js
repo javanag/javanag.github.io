@@ -6,6 +6,7 @@ import Header from "../components/Header"
 import Section from "../components/Section"
 import Icon from "../components/Icon"
 import WorkExperience from "../components/WorkExperience"
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const updateColourClock = (setClockColour) => {
   const colourScale = 2
@@ -128,7 +129,10 @@ export default () => {
       </Section>
 
       <div className="footer">
-        <p>© 2020 Javan Graham</p>
+        <p>©
+          2020 <OutboundLink href="https://cabbagecanfly.com">J</OutboundLink>
+          <OutboundLink href="https://reecemartin.github.io/">a</OutboundLink>van Graham
+        </p>
       </div>
     </main>
   )

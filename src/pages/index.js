@@ -131,7 +131,8 @@ export default () => {
       <div className="footer">
         <p>©
           2020 <OutboundLink href="https://cabbagecanfly.com">J</OutboundLink>
-          <OutboundLink href="https://reecemartin.github.io/">a</OutboundLink>van Graham
+          <OutboundLink href="https://reecemartin.github.io/">a</OutboundLink>
+          <OutboundLink href="https://www.shanshan-li.com/">v</OutboundLink>an Graham
         </p>
       </div>
     </main>

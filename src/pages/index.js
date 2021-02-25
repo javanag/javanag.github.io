@@ -32,7 +32,7 @@ export default () => {
   }, 1000)
 
   return (
-    <main className="container">
+    <main>
       <Helmet style={[{
         "cssText": `
             html {
@@ -49,8 +49,10 @@ export default () => {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
       </Helmet>
+
       <Header />
 
+      <div className="container">
       <Section icon="fa fa-user" text="About">
         <p>
           Howdy, I'm Javan, a Computer Science student at <a href="https://web.cs.toronto.edu/"><Icon icon="fa fa-university"/> UofT</a>.
@@ -142,6 +144,7 @@ export default () => {
           </p>
         </WorkExperience>
       </Section>
+      </div>
 
       <div className="footer">
         <p>©

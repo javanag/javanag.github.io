@@ -1,44 +1,61 @@
 import React, { useState } from "react"
-
-const updateWithRandomMotd = (motdList, setMotd, setMotdList) => {
-  const sampleIndex = Math.floor(Math.random() * motdList.length)
-  if (motdList.length > 0) {
-    setMotd(motdList[sampleIndex])
-    motdList.splice(sampleIndex, 1)
-    setMotdList(motdList)
-  } else {
-    setMotd("that's all folks ;)")
-  }
-}
+import Icon from "./Icon"
 
 const Header = () => {
-  const [motd, setMotd] = useState("cs student")
-  const [motdList, setMotdList] = useState(require("../../static/motd.json"))
+  const [navRowsClassName, setNavRowsClassName] = useState("hidden")
+
+  const toggleNavRowsClassName = (navRowsClassName, setNavRowsClassName) => {
+    if (navRowsClassName === "hidden") {
+      setNavRowsClassName("container navrows")
+    } else {
+      setNavRowsClassName("hidden")
+    }
+  }
 
   return (
-    <div>
-      <div style={{ float: "left", marginBottom: "1.25em" }}>
-        <h1 style={{ marginBottom: 0 }}>Javan Graham</h1>
-        <button
-          className="motd"
-          type="button"
+    <div className="header">
+      <div className="container nav">
+        <div>
+          <h3>javan.graham</h3>
+        </div>
+        <div className="navlinks">
+          <button 
+            className="navbutton"
+            onClick={() => {
+              toggleNavRowsClassName(navRowsClassName, setNavRowsClassName)
+            }}
+          >
+            <Icon icon="fas fa-bars"></Icon>
+          </button>
+
+          <a href="#about">about</a>
+          <a href="#projects">projects</a>
+          <a href="#experience">experience</a>
+        </div>
+      </div>
+      
+      <div className={navRowsClassName}>
+        <a
+          href="#about"
           onClick={() => {
-            updateWithRandomMotd(motdList, setMotd, setMotdList)
+            toggleNavRowsClassName(navRowsClassName, setNavRowsClassName)
           }}
-        >
-          software developer / <i>{motd}</i>
-        </button>
-      </div>
+        >about</a>
 
-      <div style={{ float: "right" }}>
-        <ul className="nav">
-          <li><a className="link" href="#about">about</a></li>
-          <li><a className="link" href="#projects">projects</a></li>
-          <li><a className="link" href="#experience">experience</a></li>
-        </ul>
-      </div>
+        <a
+          href="#projects"
+          onClick={() => {
+            toggleNavRowsClassName(navRowsClassName, setNavRowsClassName)
+          }}
+        >projects</a>
 
-      <div style={{ clear: "both" }}></div>
+        <a
+          href="#experience"
+          onClick={() => {
+            toggleNavRowsClassName(navRowsClassName, setNavRowsClassName)
+          }}
+        >experience</a>
+      </div>
     </div>
   )
 }

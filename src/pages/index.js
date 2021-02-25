@@ -90,14 +90,18 @@ export default () => {
           role="Full Stack Developer"
         >
           <p>
-            Due to being on such a small team, I took the opportunity to gain broad experience by wearing many hats:
+            The team was small, so I took the opportunity to gain broad experience by wearing many hats <Icon icon="fas fa-hat-cowboy" />.
+            I mostly worked on the <Icon icon="fas fa-gem" /> Ruby on Rails app, using <Icon icon="fab fa-react" /> React on the front end, building features or demos.
           </p>
-          <ul>
-            <li>Implementing internal and client requested/demo features for main <Icon icon="fas fa-gem" /> Ruby on Rails web application, with a <Icon icon="fab fa-react" /> React front end, feeding from a <Icon icon="fas fa-database" /> Postgres database, all deployed on <Icon icon="fas fa-server" /> Heroku.</li>
-            <li>Built ETL applications in <Icon icon="fab fa-python" /> Python, containerized with <Icon icon="fab fa-docker" /> Docker and running as Kubernetes pods, to capture real time financial data before forwarding through <Icon icon="fab fa-aws" /> Kinesis for further processing, eventually being stored in <Icon icon="fas fa-database" /> RDS.</li>
-            <li>Participated in hiring other software developer applicants by <Icon icon="fas fa-chalkboard-teacher" /> conducting interviews, <Icon icon="fas fa-tasks" /> grading online assessment submissions, and <Icon icon="fas fa-lightbulb" /> creating new assessments tailored to evaluate the desired skill sets.</li>
-            <li>Other developer tasks, like writing <Icon icon="fas fa-file-alt" /> design docs, maintaining other <Icon icon="fas fa-book" /> documentation wikis, and <Icon icon="fas fa-running" /> planning sprints.</li>
-          </ul>
+
+          <p>
+            Later on I learned a lot about <Icon icon="fab fa-aws" /> cloud services when we started building a data platform with <Icon icon="fab fa-python" /> Python services inside <Icon icon="fab fa-docker" /> Docker containers.
+            My component captured real time data, passed it through a <Icon icon="fas fa-project-diagram" /> Kinesis topic where it was eventually consumed and put into an <Icon icon="fas fa-database" /> RDS instance.
+          </p>
+
+          <p>
+            I also hired other software developer applicants / interns by <Icon icon="fas fa-chalkboard-teacher" /> conducting interviews, <Icon icon="fas fa-tasks" /> grading online assessment submissions, and <Icon icon="fas fa-lightbulb" /> creating new assessments tailored to evaluate the desired skill sets.
+          </p>
         </WorkExperience>
 
         <WorkExperience
@@ -112,15 +116,9 @@ export default () => {
           </p>
 
           <p>
-            After interpreting the club's needs for web page, I worked with the marketing team to implement the design
+            After gathering the club's needs and designs for the web page, I implemented them
             using <Icon icon="fa fa-code" /> HTML, CSS and JavaScript with Bootstrap. After publishing,
-            we tracked ad campaign impact on web page traffic with Google Analytics.
-          </p>
-
-          <p>
-            In August, the page was <Icon icon="fas fa-eye" /> viewed by thousands of unique visitors.
-            I'm glad that my first user-facing site, and first attempt at consulting-style
-            work, had a chance to provide real impact.
+            we tracked ad campaign impact on web page traffic with <Icon icon="fab fa-google" />  Google Analytics.
           </p>
         </WorkExperience>
       </Section>

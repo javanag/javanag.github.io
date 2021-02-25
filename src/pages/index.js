@@ -90,15 +90,16 @@ export default () => {
           role="Software Engineer Co-op"
         >
           <p>
-            Here I've been working on the main <Icon icon="fas fa-server" /> DDI
-            service control appliances written in <Icon icon="fab fa-java" /> Java.
+            Here I've been working on the
+            main <a href="https://bluecatnetworks.com/glossary/what-is-ddi/"><Icon icon="fas fa-server" /> DDI</a> service
+            control appliances written in <Icon icon="fab fa-java" /> Java.
 
             I built handlers for many of the new JSON REST service configuration API endpoints,
             and updated the existing UI to integrate them. Then I wrote some tests for it
             all using a mix of a JUnit and Selenium in-house combo.
 
             Now I am fixing <Icon icon="fas fa-bug" /> bugs as we are
-            preparing for a release this Spring.
+            preparing for a release this Spring <Icon icon="fas fa-seedling" />.
           </p>
         </WorkExperience>
 

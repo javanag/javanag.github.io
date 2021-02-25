@@ -48,6 +48,10 @@ body {
   padding: 1em 0;
 }
 
+.entry h3, h4, h5 {
+  margin: 0.25em;
+}
+
 .entry h2 {
   padding-top: 65px;
   margin-top: -65px;

@@ -157,10 +157,11 @@ export default () => {
       </div>
 
       <div className="footer">
-        <p>©
-          2021 <OutboundLink href="https://cabbagecanfly.com">J</OutboundLink>
-          <OutboundLink href="https://www.reecemartin.ca/">a</OutboundLink>
-          <OutboundLink href="https://www.shanshan-li.com/">v</OutboundLink>an Graham
+        <p>
+          <OutboundLink href="https://cabbagecanfly.com">2 </OutboundLink>
+          <OutboundLink href="https://www.reecemartin.ca/">0 </OutboundLink>
+          <OutboundLink href="https://www.shanshan-li.com/">2 </OutboundLink>
+          1
         </p>
       </div>
     </main>

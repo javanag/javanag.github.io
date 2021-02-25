@@ -53,23 +53,21 @@ export default () => {
 
       <Section icon="fa fa-user" text="About">
         <p>
-          Howdy, I'm Javan, a student in the Computer Science Specialist program at
-          the <Icon icon="fa fa-university"/> University of Toronto. Starting May 2019, after having completed my
-          third year, I spent a year working as a software developer at a fintech startup as part of 
-          my <a href="https://web.cs.toronto.edu/undergraduate/pey"><Icon icon="fas fa-user-tie" /> PEY</a>.
-
-          This summer I am taking some courses, trying my hand at contracting, and having fun with personal projects.
+          Howdy, I'm Javan, a Computer Science student at <a href="https://web.cs.toronto.edu/"><Icon icon="fa fa-university"/> UofT</a>.
+          Since September, I've been doing an internship at <a href="https://bluecatnetworks.com/"> a DDI company</a>, ending in April.
+          This summer I'm looking for one last internship before going back to school in the fall for my final year.
         </p>
 
         <p>
-          I first got into programming as a kid by playing <a href="https://www.minecraft.net/en-us/">Minecraft</a> and
-          being inspired to learn how to create a game
-          like that. <i>Click around to discover some easter eggs and links on the page!</i> Check out my
-          <a href="https://github.com/javanag"> <Icon icon="fab fa-github-alt" /> GitHub</a> to
-          see more, my <a href="https://ca.linkedin.com/in/javan-graham-baabb1195">
-          <Icon icon="fab fa-linkedin" /> LinkedIn</a> (if you are into that), and send me an email
-          at <span className="email"><Icon icon="fa fa-envelope" /><b> javan.graham (at) mail.utoronto.ca</b></span> if
-          you'd like to discuss anything!
+          I took up programming as a kid, at first because <a href="https://www.minecraft.net/en-us/">Minecraft</a> was
+          so inspirational to me, that I wanted to know how it was made.
+          Right now I'm learning <a href="https://crystal-lang.org/">Crystal</a> for a project I'm working
+          on. <i>Click around to discover some easter eggs and links on the page!</i>
+        </p>
+        <p>
+          Here's my <a href="https://github.com/javanag"> <Icon icon="fab fa-github-alt" /> GitHub</a>,
+          find me on <a href="https://ca.linkedin.com/in/javan-graham-baabb1195"><Icon icon="fab fa-linkedin" /> LinkedIn</a>,
+          and talk to me at <span className="email"><Icon icon="fa fa-envelope" /><b> javan.graham (at) mail (dot) utoronto (dot) ca</b></span>.
         </p>
       </Section>
 
@@ -106,6 +104,7 @@ export default () => {
           company="Rotary Club Burlington Lakeshore"
           companyUrl="https://rotaryburlington.com/"
           subtitle="Burlington, July 2018 - August 2018"
+          role="Web Developer"
         >
           <p>
             I created a static site as part of a marketing campaign for a pilot event the Rotary
@@ -128,7 +127,7 @@ export default () => {
 
       <div className="footer">
         <p>©
-          2020 <OutboundLink href="https://cabbagecanfly.com">J</OutboundLink>
+          2021 <OutboundLink href="https://cabbagecanfly.com">J</OutboundLink>
           <OutboundLink href="https://reecemartin.github.io/">a</OutboundLink>
           <OutboundLink href="https://www.shanshan-li.com/">v</OutboundLink>an Graham
         </p>

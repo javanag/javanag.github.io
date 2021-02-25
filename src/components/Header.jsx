@@ -6,7 +6,7 @@ const Header = () => {
 
   const toggleNavRowsClassName = (navRowsClassName, setNavRowsClassName) => {
     if (navRowsClassName === "hidden") {
-      setNavRowsClassName("container navrows")
+      setNavRowsClassName("container nav navrows")
     } else {
       setNavRowsClassName("hidden")
     }

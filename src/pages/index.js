@@ -7,6 +7,7 @@ import Section from "../components/Section"
 import Icon from "../components/Icon"
 import WorkExperience from "../components/WorkExperience"
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import MOTDButton from '../components/MOTDButton'
 
 const updateColourClock = (setClockColour) => {
   const colourScale = 2
@@ -53,19 +54,28 @@ export default () => {
       <Header />
 
       <div className="container">
+
+      <div className="howdy">
+        <h1>Howdy, I'm Javan, and I am a</h1>
+        <MOTDButton />
+      </div>
+
       <Section icon="fa fa-user" text="About">
         <p>
-          Howdy, I'm Javan, a Computer Science student at <a href="https://web.cs.toronto.edu/"><Icon icon="fa fa-university"/> UofT</a>.
-          Since September, I've been doing an internship at <a href="https://bluecatnetworks.com/"><Icon icon="fas fa-cat"/> a DDI company</a>, ending in April.
-          This summer I'm looking for one last internship before going back to school in the fall for my final year <Icon icon="fas fa-user-graduate"/>.
+          Since September, I've been doing an internship
+          at <a href="https://bluecatnetworks.com/"><Icon icon="fas fa-cat"/> a DDI company</a>, ending in April.
+          This summer I'm looking for one last internship before going back
+          to <a href="https://web.cs.toronto.edu/"><Icon icon="fa fa-university"/> UofT</a> in
+          the fall for my final year <Icon icon="fas fa-user-graduate"/>.
         </p>
 
         <p>
           I took up programming as a kid, at first because <a href="https://www.minecraft.net/en-us/"><Icon icon="fas fa-gamepad"/> Minecraft</a> was
           so inspirational to me, that I wanted to know how it was made.
           Right now I'm learning <a href="https://crystal-lang.org/">Crystal</a> and looking into using <a href="https://amberframework.org/">Amber</a> for a project I'm working
-          on. <i>Click around to discover some <Icon icon="fas fa-egg"/> easter eggs and links on the page!</i>
+          on.
         </p>
+
         <p>
           Here's my <a href="https://github.com/javanag"> <Icon icon="fab fa-github-alt" /> GitHub</a>,
           find me on <a href="https://ca.linkedin.com/in/javan-graham-baabb1195"><Icon icon="fab fa-linkedin" /> LinkedIn</a>,

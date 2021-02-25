@@ -45,7 +45,7 @@ body {
 }
 
 .entry {
-  padding: 0.25em 0;
+  padding: 1em 0;
 }
 
 .entry h2 {
@@ -152,6 +152,16 @@ a:hover {
 
 .hidden {
   display: none;
+}
+
+.howdy {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.howdy h1, h2 {
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px){

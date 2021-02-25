@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 const MOTDButton = () => {
-  const [motd, setMotd] = useState("cs student")
+  const [motd, setMotd] = useState("cs student...")
   const [motdList, setMotdList] = useState(require("../../static/motd.json"))
 
   const updateWithRandomMOTD = (motdList, setMotd, setMotdList) => {
@@ -23,7 +23,7 @@ const MOTDButton = () => {
         updateWithRandomMOTD(motdList, setMotd, setMotdList)
       }}
     >
-      software developer / <i>{motd}</i>
+      <h2>software developer / <i>{motd}</i></h2>
     </button>
   )
 }

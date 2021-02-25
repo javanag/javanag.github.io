@@ -14,8 +14,8 @@ body {
 }
 
 .container {
-  margin: 2.5% 5%;
-  padding: 2.5% 5%;
+  margin: 5% 5%;
+  padding: 5% 5%;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 25px;
 }
@@ -187,5 +187,14 @@ a:hover {
     -webkit-transform: translate(-5%, -5%);
     -ms-transform: translate(-5%, -5%);
     transform: translate(-5%, -5%);
+  }
+
+  .container {
+    margin: 2.5% 2.5%;
+    padding: 2.5% 2.5%;
+  }
+
+  body {
+    font-size: 0.9em;
   }
 }

@@ -99,7 +99,7 @@ export default () => {
             all using a mix of a JUnit and Selenium in-house combo.
 
             Now I am fixing <Icon icon="fas fa-bug" /> bugs as we are
-            preparing for a release this Spring <Icon icon="fas fa-seedling" />.
+            preparing for a release this Spring.
           </p>
         </WorkExperience>
 

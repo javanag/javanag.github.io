@@ -16,7 +16,7 @@ const Header = () => {
     <div className="header">
       <div className="container nav">
         <div>
-          <h3><a href="#">javangraham.me</a></h3>
+          <h3><a href="#top">javangraham.me</a></h3>
         </div>
         <div className="navlinks">
           <button 

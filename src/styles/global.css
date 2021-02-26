@@ -172,6 +172,42 @@ a:hover {
   margin: 0;
 }
 
+.project {
+  display: flex;
+  padding-top: 1.25em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.project-header {
+  padding-top: 1em;
+}
+
+.project-description-container {
+  width: 45%;
+}
+
+.project-description-container p:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.project-image-container {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  text-align: center;
+}
+
+.project-image-container img {
+  margin: auto;
+  display: flex;
+  max-width: 100%;
+  max-height: 66vh;
+  object-fit: contain;
+}
+
 @media screen and (max-width: 768px){
   body {
     font-size: medium;
@@ -191,5 +227,19 @@ a:hover {
 
   .navrows {
     display: flex;
+  }
+
+  .project {
+    flex-direction: column-reverse;
+  }
+
+  .project-description-container {
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .project-image-container {
+    width: 100%;
+    padding: 1em 0;
   }
 }

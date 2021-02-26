@@ -88,10 +88,34 @@ export default () => {
           <footer> - <a href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a></footer>
         </blockquote>
 
-        <p className="footer">
-          (I'd like to take some more time to get this right. For now please see
-          my <a href="https://github.com/javanag">GitHub</a>)
-        </p>
+        <div className="project-header">
+          <h3><a href="https://imagefy-image-repository.herokuapp.com/"><Icon icon="fas fa-images" /> imagefy!</a></h3>
+          <h4><i>Image uploading and sharing platform</i></h4>
+          <h5><a href="https://github.com/javanag/imagefy"><Icon icon="fab fa-github" /> GitHub</a></h5>
+        </div>
+        <div className="project">
+          <div className="project-description-container">
+            <p>
+              Users can register and upload images with metadata, and set access controls per-image.
+              Open images are indexed on the homepage stream of images for all 
+              users, unlisted images are viewable to all with a direct link, 
+              secret images are only visible to the uploader.
+              Click the surprise link to be taken to a random public image!
+            </p>
+
+            <p>
+              Built with Ruby on Rails, using Postgres.
+              Image uploads are stored on AWS S3.
+              Containerized using Docker to make it easy to develop, and run a
+              GitHub Actions test pipeline on pushes or pull requests.
+              Deployed automatically from master to Heroku.
+            </p>
+          </div>
+          <div className="project-image-container">
+            <img src="imagefy.jpg" alt="A screenshot of the imagefy user interface." />
+          </div>
+        </div>
+
       </Section>
 
       <Section icon="fa fa-laptop-code" text="Experience">

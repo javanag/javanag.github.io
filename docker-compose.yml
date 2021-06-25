@@ -4,5 +4,7 @@ services:
     build: .
     volumes:
       - .:/javanag
+      - ~/.ssh:/root/.ssh
+      - ~/.gitconfig:/etc/gitconfig
     ports:
       - '8000:8000'

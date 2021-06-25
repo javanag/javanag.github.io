@@ -62,9 +62,9 @@ export default () => {
 
       <Section icon="fa fa-user" text="About">
         <p>
-          Since September, I've been doing an internship
-          at <a href="https://bluecatnetworks.com/"><Icon icon="fas fa-cat"/> a DDI company</a>, ending in April.
-          This summer I'm looking for one last internship before going back
+          Since May, I've been doing an internship
+          at <a href="https://www.shopify.ca"><Icon icon="fas fa-shopping-cart"/> an e-commerce company</a>, ending in August.
+          I'm just trying to enjoy this last "student" summer before returning
           to <a href="https://web.cs.toronto.edu/"><Icon icon="fa fa-university"/> UofT</a> in
           the fall for my final year <Icon icon="fas fa-user-graduate"/>.
         </p>
@@ -72,8 +72,7 @@ export default () => {
         <p>
           I took up programming as a kid, at first because <a href="https://www.minecraft.net/en-us/"><Icon icon="fas fa-gamepad"/> Minecraft</a> was
           so inspirational to me, that I wanted to know how it was made.
-          Right now I'm learning <a href="https://crystal-lang.org/">Crystal</a> and looking into using <a href="https://amberframework.org/">Amber</a> for a project I'm working
-          on.
+          Right now I'm not doing too much programming outside of work, opting to focus on outdoor activities.
         </p>
 
         <p>
@@ -120,22 +119,54 @@ export default () => {
 
       <Section icon="fa fa-laptop-code" text="Experience">
         <WorkExperience
+          company="Shopify"
+          companyUrl="https://www.shopify.ca"
+          subtitle="Toronto (Remote), May 2021 -"
+          role="Backend Developer Intern"
+        >
+          <p>
+            I'm working on the Fulfillment Platform team, responsible for developing
+            the components modelling 
+            the <a href="https://help.shopify.com/en/manual/orders/fulfillment">fulfillment processes</a>, and
+            APIs for external developers that enable workflows with third party
+            logistics providers for merchants. Primarily working
+            in <Icon icon="fas fa-gem" /> Ruby on Rails.
+          </p>
+
+          <p>
+            In addition to a main project I probably can't write about, I'll also
+            be working on an independent project exploring the use case
+            for <a href="https://github.com/shopify/packwerk"><Icon icon="fas fa-box" /> Packwerk</a> in
+            our component, and eventually implementing it. It's a tool that helps
+            enforce boundaries in your code.
+          </p>
+        </WorkExperience>
+
+        <WorkExperience
           company="BlueCat Networks"
           companyUrl="https://bluecatnetworks.com/"
-          subtitle="Toronto (Remote), September 2020 -"
+          subtitle="Toronto (Remote), September 2020 - April 2021"
           role="Software Engineer Co-op"
         >
           <p>
-            Here I've been working on the
-            main <a href="https://bluecatnetworks.com/glossary/what-is-ddi/"><Icon icon="fas fa-server" /> DDI</a> service
-            control appliances written in <Icon icon="fab fa-java" /> Java.
+            My team was responsible for building a provisioning API which allows
+            automated bulk service configuration for
+            our <a href="https://bluecatnetworks.com/glossary/what-is-ddi/"><Icon icon="fas fa-server" /> DDI</a> server
+            appliances (software written in <Icon icon="fab fa-java" /> Java),
+            where previously, the process was manual though the UI, and only
+            for individual servers.
+          </p>
 
-            I built handlers for many of the new JSON REST service configuration API endpoints,
-            and updated the existing UI to integrate them. Then I wrote some tests for it
-            all using a mix of a JUnit and Selenium in-house combo.
+          <p>
+            I built handlers for many of the new JSON REST API endpoints,
+            and updated the existing UI to integrate them, to increase modularity.
+            When writing tests I would use a mix of a JUnit and Selenium in-house combo.
+          </p>
 
-            Now I am fixing <Icon icon="fas fa-bug" /> bugs as we are
-            preparing for a release this Spring.
+          <p>
+            After release in the spring, I started to research and scope out new features
+            for the next release with my team during the last month. We created
+            estimates and guiding documentation for the future developers.
           </p>
         </WorkExperience>
 

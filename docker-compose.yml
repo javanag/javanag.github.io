@@ -1,10 +1,20 @@
 version: '3.9'
 services:
-  web:
-    build: .
+  build:
+    image: klakegg/hugo:0.101.0
     volumes:
-      - .:/javanag
-      - ~/.ssh:/root/.ssh
-      - ~/.gitconfig:/etc/gitconfig
+      - ".:/src"
+    profiles: ["build"]
+  server:
+    image: klakegg/hugo:0.101.0-alpine
+    command: server
+    volumes:
+      - ".:/src"
     ports:
-      - '8000:8000'
+      - "1313:1313"
+  shell:
+    image: klakegg/hugo:0.101.0-alpine
+    command: shell
+    volumes:
+      - ".:/src"
+    profiles: ["shell"]

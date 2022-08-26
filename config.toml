@@ -1,0 +1,4 @@
+baseURL = 'https://javangraham.com/'
+languageCode = 'en-us'
+title = 'javangraham.com'
+theme = 'jg'

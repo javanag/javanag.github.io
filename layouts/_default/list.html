@@ -1,0 +1,5 @@
+{{ define "main" }}
+<h1>{{ i18n "posts.title" }}</h1>
+{{ .Content }}
+{{- partial "posts.html" . -}}
+{{ end }}

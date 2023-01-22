@@ -3,3 +3,4 @@ node_modules
 .vscode
 .cache
 public
+.hugo_build.lock

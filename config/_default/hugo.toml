@@ -1,0 +1,8 @@
+baseURL = 'https://javangraham.com'
+languageCode = 'en-us'
+title = 'javangraham.com'
+theme = 'etch'
+
+[markup.goldmark.renderer]
+  # Allows HTML in Markdown
+  unsafe = true

@@ -1,19 +1,19 @@
 version: '3.9'
 services:
   build:
-    image: klakegg/hugo:0.101.0
+    image: klakegg/hugo:0.107.0
     volumes:
       - ".:/src"
     profiles: ["build"]
   server:
-    image: klakegg/hugo:0.101.0-alpine
+    image: klakegg/hugo:0.107.0
     command: server
     volumes:
       - ".:/src"
     ports:
       - "1313:1313"
   shell:
-    image: klakegg/hugo:0.101.0-alpine
+    image: klakegg/hugo:0.107.0
     command: shell
     volumes:
       - ".:/src"

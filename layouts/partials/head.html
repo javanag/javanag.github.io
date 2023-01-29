@@ -24,10 +24,18 @@
         {{ $resources = $resources | append (resources.Get "css/syntax.css") -}}
     {{ end -}}
 
+    {{ $resources = $resources | append (resources.Get "css/custom.css") -}}
+
+    <!-- FontAwesome -->
+    {{ $resources = $resources | append (resources.Get "css/fontawesome.css") -}}
+    {{ $resources = $resources | append (resources.Get "css/brands.css") -}}
+    {{ $resources = $resources | append (resources.Get "css/solid.css") -}}
+
     {{ $css := $resources | resources.Concat "css/style.css" | minify }}
     {{ printf `<link rel="stylesheet" href="%s">` $css.RelPermalink | safeHTML }}
 
-    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Development version of FA -->
+    <!-- <link rel="stylesheet" href="/css/all.min.css"> -->
 
     <link rel="canonical" href="{{ .Permalink }}" />
     <title>{{ .Title }}</title>

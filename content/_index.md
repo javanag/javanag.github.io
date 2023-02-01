@@ -1,7 +1,7 @@
 ---
 title: "Javan Graham | Software Developer"
 ---
-<h1>Howdy, I'm <strong>Javan</strong> and I am<span id="motd-article"> a</span><br id="motd-break"><strong id="motd"> software developer</strong>.</h1><br>
+<h1>Howdy, I'm <strong>Javan</strong> and I am<span id="motd-article"> a&#32;</span><br id="motd-break"><strong id="motd">software developer</strong>.</h1><br>
 
 <script src="/js/motd.js"></script> 
 

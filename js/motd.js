@@ -13,20 +13,21 @@ function generateUpdateNextDescription() {
     "grapheneos pixel toter",
     "high school jazz trumpeter",
     "meal prepper",
+    "meaning seeker",
     "minimalist",
     "morning and night walker",
+    "not so rusty german speaker",
     "plant protector",
     "present-day present-time hair dangler",
     "regular gymgoer",
     "retired barber",
-    "rusty german speaker",
     "self (and other) improver",
     "semi-frequent reader",
+    "semi-retired twitch streamer",
     "slightly washed jogger",
-    "soundcloud producer",
-    "startup dreamer",
+    "soundcloud producer who may also rap",
+    "startup dreamer and nightmarer",
     "ttc passenger",
-    "twitch streamer",
     "ultimate frisbee player",
     "veteran gamer",
     "vex world championship participant",
@@ -54,3 +55,4 @@ function generateUpdateNextDescription() {
     event.target.textContent = description;
   };
 }
+

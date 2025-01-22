@@ -7,13 +7,35 @@ type: single
 
 <br>
 
-## {{< fa fa-solid fa-images >}} imagefy!
-Image uploading and sharing platform
+## [Anishare](https://anishare.co)
+Collaborative animation social platform
 
-- [{{< fa fa-brands fa-github-alt >}} GitHub](https://github.com/javanag/imagefy)
+<br>
 
-{{< figure src="/images/imagefy.jpg" alt="A screenshot of the imagefy user interface." >}}
+{{< figure
+    src="/images/anishare.jpg"
+    alt="A screenshot of the thumbnails of my collaboration posts on Anishare"
+    caption="Thumbnails of my collaborations with other creators on Anishare"
+>}}
 
-Registered users can upload images and set access controls per-image. Open images are indexed on the homepage stream of images for all users, Unlisted images are viewable to all with a direct link, Secret images are only visible to the uploader. Click the surprise link to be taken to a random Open image!
+<br>
 
-Built using Rails with Postgres. Image uploads are stored on S3. Containerized using Docker to make it easy to develop, and run a GitHub Actions test pipeline on pushes or pull requests.
+Creators can make Flipnote-style animations together in real time in the browser. Animations are stored in the cloud and accessible between devices, and can be exported to MP4, GIF, and PNG image sequences.
+
+They can also be published on the site for other users to interact with via clapping, commenting, and remixing.
+
+<br>
+
+{{< figure
+    src="/images/anishare-editor.jpg"
+    alt="A screenshot of the Anishare editor with a happy animation open"
+    caption="Editing an animation on Anishare"
+>}}
+
+<br>
+
+The editor supports up to 4 users collaborating on the same animation. It is meant to be minimal and accessible, so that it is easy to jump in, create, and have fun.
+
+Inspired by my experiences using [Flipnote Studio](https://en.wikipedia.org/wiki/Flipnote_Studio) on the Nintendo DSi growing up, where kids from around the world made magical moving pictures.
+
+Built using [tsoa](https://tsoa-community.github.io/docs/) (with [Koa](https://koajs.com/)) on the back end, [Next.js](https://nextjs.org/) on the front, everything written in TypeScript (naturally). Postgres as a database, Redis for in-memory storage. Containerized with Docker to make development, deployment, and life easier.

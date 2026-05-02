@@ -1,0 +1,14 @@
+html {
+  background-color: #001800;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: larger;
+  padding: 16px 32px;
+  color: #eeeeee;
+}
+
+.bold {
+  font-weight: bold;
+}
